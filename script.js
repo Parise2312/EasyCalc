@@ -6,12 +6,31 @@ function calcular() {
   let op = document.getElementById("operacao").value;
 
   let resultado;
+switch (op) {
+  case "soma":
+  resultado = v1 + v2;
+  break;
+ 
+  case "subtrair":
+   resultado = v1 - v2;
+   break;
+  
+   case "multiplicar":
+    resultado = v1 * v2;
+    break;
+     
+    case "dividir":
+      if (v2 === 0) {
+        document.getElementById("resultado").innerText = "Não é possivel dividir por 0";
+        return;
+      }
+      resultado = v1 / v2;
+      break;
 
-  if (op === "soma") {
-    resultado = v1 + v2;
-  } else if (op === "Subtrair") {
-    resultado = v1 - v2;
-  }
+      default:
+        document.getElementById("resultado").innerText = "Operação inválida";
+        return;
+    }
 
   document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
