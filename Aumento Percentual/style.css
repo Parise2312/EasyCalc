@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(51, 51, 90);
+}
+
+h2 {
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+h1 {
+    color: aliceblue;
+
+}
